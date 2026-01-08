@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Under Development</title>
+  <title>Warning</title>
   <meta name="robots" content="noindex,nofollow" />
   <style>
     * {
@@ -66,7 +66,7 @@
 
     /* Modal Header */
     .modal-header {
-      background: linear-gradient(135deg, #f5a623 0%, #f76b1c 100%);
+      background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
       padding: 24px;
       text-align: center;
     }
@@ -88,29 +88,17 @@
       padding: 28px 24px;
       color: #333;
       line-height: 1.6;
+      text-align: center;
     }
 
     .modal-body p {
       margin-bottom: 16px;
-      font-size: 15px;
+      font-size: 18px;
+      font-weight: 500;
     }
 
     .modal-body p:last-child {
       margin-bottom: 0;
-    }
-
-    .warning-box {
-      background: #fff3cd;
-      border-left: 4px solid #f5a623;
-      padding: 12px 16px;
-      margin: 16px 0;
-      border-radius: 4px;
-    }
-
-    .warning-box strong {
-      color: #d97706;
-      display: block;
-      margin-bottom: 6px;
     }
 
     /* Modal Footer */
@@ -171,27 +159,14 @@
   <div class="modal-overlay" id="warningModal">
     <div class="modal">
       <div class="modal-header">
-        <div class="warning-icon">⚠️</div>
-        <h1>Important Notice</h1>
+        <div class="warning-icon">🚫</div>
+        <h1>Warning</h1>
       </div>
       <div class="modal-body">
-        <p><strong>This website is currently under development and not ready for public use.</strong></p>
-
-        <div class="warning-box">
-          <strong>⛔ Do Not Proceed If:</strong>
-          You are looking for a production-ready application or service.
-        </div>
-
-        <p>This is a <strong>pre-release test environment</strong> provided for evaluation and testing purposes only.</p>
-
-        <p><strong style="color: #d97706;">Warning:</strong> Do not enter any real personal information, passwords, payment details, or sensitive data on this site. Features may be incomplete, unstable, or subject to change without notice.</p>
-
-        <p style="font-size: 13px; color: #666; margin-top: 20px;">
-          By continuing, you acknowledge that this is an experimental environment and accept that functionality may be limited or unavailable.
-        </p>
+        <p>Do not open this link!</p>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal()">I Understand, Continue</button>
+        <button class="btn" onclick="closeModal()">Continue Anyway</button>
         <button class="btn btn-secondary" onclick="goBack()">Go Back</button>
       </div>
     </div>
@@ -199,8 +174,7 @@
 
   <!-- Background Content (shown after modal is closed) -->
   <div class="background-content">
-    <h2>🚧 Under Construction</h2>
-    <p>Development in progress...</p>
+    <h2>⚠️</h2>
   </div>
 
   <script>
